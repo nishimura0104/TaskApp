@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
 
             override fun onQueryTextSubmit(query: String): Boolean {
                 // submit button pressed
-                categoryQuery(mRealm, query)
+                categoryQuery(query)
                 return true
             }
         })
@@ -125,7 +125,7 @@ class MainActivity : AppCompatActivity() {
         mTaskAdapter.notifyDataSetChanged()
     }
 
-    fun categoryQuery(mRealm: Realm, query: String) {
+    fun categoryQuery(query: String) {
         // Realmデータベースから、「全てのデータを取得して新しい日時順に指定されたカテゴリを並べた結果」を取得
         val taskRealmResults =
             mRealm.where(Task::class.java).contains("category",  query)
