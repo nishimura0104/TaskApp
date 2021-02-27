@@ -12,18 +12,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <SearchView
-            android:id="@+id/search"
+        <Spinner
+            android:id="@+id/spinner"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:iconifiedByDefault="false"
-            android:queryHint="カテゴリ検索" />
+            android:layout_height="82dp"
+            android:layout_below="@+id/content_edit_text" />
 
         <ListView
             android:id="@+id/listView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/search"/>
+            android:layout_below="@+id/spinner"/>
 
     </RelativeLayout>
 

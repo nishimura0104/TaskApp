@@ -33,6 +33,13 @@
                 android:value="jp.techacademy.rei.nishimura.taskapp.MainActivity" />
         </activity>
 
+        <activity
+            android:name=".InputCategoryActivity"
+            android:label="タスク"
+            android:parentActivityName=".InputActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
         <receiver android:name=".TaskAlarmReceiver" />
 
     </application>
